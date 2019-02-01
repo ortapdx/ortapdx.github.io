@@ -205,7 +205,7 @@ layout: default
         {% if site.org_phone %}
         <abbr title="Phone">P:</abbr> {{ site.org_phone }}
         {% if site.org_general_email_inbox %}
-        <abbr title="Email">E:</abbr> {{ site.org_general_email_inbox }}
+        <abbr title="Phone">E:</abbr> <a href="mailto: {{ site.org_general_email_inbox }}">{{ site.org_general_email_inbox }}</a>
         {% endif %}
       </address>
       <div class="clearfix"></div>
