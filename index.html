@@ -202,7 +202,8 @@ layout: default
     <div class="contact-inner">
       <h2 class="title  text-center">Contact</h2>
       <address class="text-center">
-        <strong>{{ site.org_name }}</strong><br>
+        <strong>{{ site.org_abbr }}</strong><br>
+        {{ site.org_name }}<br>
         {% if site.org_street_address %}{{ site.org_street_address }},&nbsp;{% endif %}{% if site.org_address_suite %}{{ site.org_address_suite }}<br>{% endif %}
         {% if site.org_city %}{{ site.org_city }},&nbsp;{% endif %}{% if site.org_state %}{{ site.org_state }}&nbsp;{% endif %}{% if site.org_zip %}{{ site.org_zip }}{% endif %}<br>
         {% if site.org_phone %}
