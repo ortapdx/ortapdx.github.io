@@ -1,1 +1,71 @@
+#INTRO
+#Set up is quick and easy. Simply replace any example text with your nonprofit's information.
+#To leave a field blank, simply remove everything after the colon (:) or place a hashtag (#) at the start of the line.
+#If you see '> # Enter on the next line', be sure the next line remains indented two spaces.
 
+#REQUIRED
+org_name: Oregon Turkish American Association (ORTA)
+org_summary: > # Enter your summary on the next line. Be sure to indent by two spaces.
+  As a non-profit organization, ORTA is dedicated to enriching the lives of the Turkish-American community through educational, recreational, social, and cultural activities in Oregon without supporting any political or religious agenda.
+org_full_description: > # Enter your description on the next line. Be sure to indent by two spaces.
+  Oregon Turkish American Association (ORTA) is a non-profit organization aiming to take its rightful place among the community organizations that are actively reweaving the social fabric of Oregon for a better future. ORTA is dedicated to enriching the lives of the Turkish-American community through educational, recreational, social, and cultural activities in Oregon without supporting any political or religious agenda. We are here to organize events and activities to promote cross cultural exchange of ideas, art, cuisine, traditions. ORTA was founded to create a community and a welcoming environment to anyone who is interested. We strive to extend our support to the Turkish American student body in the area, and partnering with humanitarian organizations in the USA and in Turkey to advance common causes. Come join us! ORTA is your community and we are not complete without you.
+
+#OPTIONAL
+#Non US-address support coming soon
+org_general_email_inbox: contact@ortapdx.org
+#org_street_address: 1355 Market Street #Please include suite number on the line below
+#org_address_suite: Suite 900
+org_city: Portland
+org_state: OR
+org_zip: > # Enter zip on next line. Be sure to indent by two spaces.
+  97229
+org_phone: > # Enter phone on next line. Be sure to indent by two spaces.
+  (971) 245-2540
+
+#SOCIAL MEDIA
+twitter_username: ortapdx
+facebook_username: ortapdx
+instagram_username: joinortapdx
+
+#TAX STATUS
+#Your site will display an appropriate message below the Donate section
+#If your organization is fiscally sponsored, enter true below and add your sponsor's name. Otherwise enter false.
+fiscal_sponsor: false
+fiscal_sponsor_name:
+#If your organization is currently registered as a 501(c)3 organization, enter true below. Otherwise enter false. Enter false if you have a fiscal sponsor.
+501c3: true
+
+#ONLINE DONATIONS & EMAIL SIGNUPS
+#To use these services, enter the required usernames. For further instructions, consult the README file.
+#If you do not wish to use a service, simply remove everything after the colon (:), leaving the item blank
+# donorbox_campaign_name: free-template-demo
+tinyletter_username: ortapdx
+
+#SEARCH ENGINES
+#Changing this next setting to 'true' will allow your site to be indexed by search engines (like Google)
+publish: true
+
+#THEME
+#Select one of the five color schemes (default, one, two, three, or four)
+theme: default
+
+# *** DO NOT CHANGE ANYTHING BELOW THIS LINE ***
+
+# Unless you know what you're doing, no need to change anything below
+# Build settings
+baseurl: "" # the subpath of your site, e.g. /blog/
+markdown: kramdown
+kramdown:
+  input: GFM
+
+sass:
+    sass_dir: assets/_sass
+    style: compressed
+
+#Features under development
+#These are not yet fully supported, but should give you a head start if you know what you're doing
+paypal_button_id: #Not yet available
+smartergiving_id: #Not yet available
+#mailchimp_embed_code: > # Enter Mailchimp post url on next line.
+#  //getkyn.us5.list-manage.com/subscribe/post?u=1407d7ee4cd0d47986cd54315&amp;id=cdc32b64fe
+#mailchimp_spam_guard: b_753395b9f963c9ea2d6980b7c_9e1559c2f0
