@@ -23,9 +23,9 @@ org_phone: > # Enter phone on next line. Be sure to indent by two spaces.
   (971) 245-2540
 
 #SOCIAL MEDIA
-org_twitter_username: ortapdx
-org_facebook_username: ortapdx
-org_instagram_username: watchortapdx
+twitter_username: ortapdx
+facebook_username: ortapdx
+instagram_username: watchortapdx
 
 #TAX STATUS
 #Your site will display an appropriate message below the Donate section
