@@ -4,16 +4,16 @@ layout: default
 <!-- ******HEADER****** -->
 <header id="header" class="header">
   <div class="container">
-    <h1 class="logo pull-left">
+    <h2 class="logo">
       <a href="/">
+        <span class="logo-title highlight">{{ site.org_abbr }}</span><br>
         <span class="logo-title">{{ site.org_name }}</span>
       </a>
-    </h1><!--//logo-->
+    </h2>
     <nav id="main-nav" class="main-nav navbar-right" role="navigation">
       <div class="navbar-header">
         <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-collapse">
           <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
@@ -36,7 +36,8 @@ layout: default
 <!-- ******PROMO****** -->
 <section id="promo" class="promo section offset-header">
   <div class="container text-center">
-    <h2 class="title"><span class="highlight">{{ site.org_name }}</span></h2>
+    <!-- <h3 class="title"><span class="highlight">{{ site.org_name }}</span></h3> -->
+    <div class="intro" style="margin-bottom:0;"><img border="0" style="width:100%; height:auto;" src="https://raw.githubusercontent.com/ortapdx/ortapdx.github.io/master/images/ORTA_logo_tpt.png"></div>
     <p class="intro">{{ site.org_summary }}</p>
     <div class="btns">
       <!--a class="btn btn-cta-secondary" href="#" target="_blank">Demo</a-->
@@ -199,7 +200,8 @@ layout: default
     <div class="contact-inner">
       <h2 class="title  text-center">Contact</h2>
       <address class="text-center">
-        <strong>{{ site.org_name }}</strong><br>
+        <span class="logo-title highlight">{{ site.org_abbr }}</span><br>
+        <span class="logo-title">{{ site.org_name }}</span><br>
         {% if site.org_street_address %}{{ site.org_street_address }},&nbsp;{% endif %}{% if site.org_address_suite %}{{ site.org_address_suite }}<br>{% endif %}
         {% if site.org_city %}{{ site.org_city }},&nbsp;{% endif %}{% if site.org_state %}{{ site.org_state }}&nbsp;{% endif %}{% if site.org_zip %}{{ site.org_zip }}{% endif %}<br>
         {% if site.org_phone %}
@@ -208,8 +210,8 @@ layout: default
         {% if site.org_general_email_inbox %}
         <abbr title="Email">E:</abbr> <a href="mailto: {{ site.org_general_email_inbox }}">{{ site.org_general_email_inbox }}</a> <br>
         {% endif %}
-        EIN 83-3393692 <br>
-        OR Registered Non-Profit 1519300-97
+        EIN: 83-3393692<br>
+        OR Registered Non-Profit: 1519300-97
       </address>
       <div class="clearfix"></div>
       <div class="info text-center">
