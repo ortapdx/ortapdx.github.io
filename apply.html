@@ -32,46 +32,28 @@ layout: default
     </nav><!--//main-nav-->
   </div>
 </header><!--//header-->
-
+<p><br></p>
 <!-- ******DONATE****** -->
 <section id="donate" class="donate section text-center">
   <div class="container">
     <div class="donate-inner">
-      <h2 class="title text-center">Donate</h2>
+      <h2 class="title text-center">ORTA Membership Application</h2>
       <div class="info">
-        <p><strong>Become a donor today.</strong><br>As a small grassroots organization, know that every dollar will have an immense impact on our ability to continue working towards our mission.</p>
-        {% if site.donorbox_campaign_name %}
-          <div class="donorbox text-center">
-            <iframe src="https://donorbox.org/embed/{{ site.donorbox_campaign_name }}" height="600px" width="100%" style="max-width:500px; min-width:310px" seamless="seamless" name="donorbox" frameborder="0" scrolling="no"></iframe>
-          </div>
-          {% if site.501c3 == true %}
-            <p>Contributions are tax deductible to the extent permitted by law.<br>{{ site.org_name }} is a 501(c)(3) organization.</p>
-          {% elsif site.fiscal_sponsor_name %}
-            <p>{{ site.org_name }} is fiscally sponsored by {{ site.fiscal_sponsor_name }}, a 501 (c)(3) tax exempt non-profit organization.</p>
-          {% endif %}
-        {% else %}
-        <div class="donorbox text-center">
-        </div>
-        <hr>
-        <p class="text-warning">Sorry, online donations are not available at this time <i class="fa fa-frown-o"></i></p>
-        <hr>
-        {% endif %}
-      </div><!--//info-->
-      <div class="cta-container">
-        <div class="speech-bubble">
-          <p class="intro">Your support means the world to us :)</p>
-          <div class="icon-holder  text-center"><i class="fa fa-smile-o"></i></div>
-        </div><!--//speech-bubble-->
-        <div class="btn-container  text-center">
-          <!--//You need to generate your own PayPal button if you choose to use Paypal - https://www.paypal.com/us/cgi-bin/?cmd=_donate-intro-outside -->
-          <!--PayPal generated code starts-->
-              <!--form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-              <input type="hidden" name="cmd" value="_s-xclick">
-              <input type="hidden" name="hosted_button_id" value="{{ site.paypal_button_id }}">
-              <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-              <img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1">
-            </form-->
-            <!--//PayPal generated code ends-->
+        <p><strong>You cile a membership application now online.</strong><br>Please review below information carefully before proceeding.</p>
+        <ul>
+          <li>You must reside in the State of Oregon, Clark County or Skamania County in Washington State.</li>
+          <li>You need a credit card (VISA, MC, AmEx, DISCOVER) in your name with billing address of above residence.</li>
+          <li>Paypal will charge your card 1 (one) cent for us to verify your name and address for membership.</li>
+        </ul>
+    
+         <!--PayPal generated code starts-->
+         <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+            <input type="hidden" name="cmd" value="_s-xclick" />
+            <input type="hidden" name="hosted_button_id" value="RBLMD58B2AGX8" />
+            <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+            <img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
+          </form>
+          <!--//PayPal generated code ends-->
 
         </div><!--//btn-container-->
       </div><!--//cta-container-->
