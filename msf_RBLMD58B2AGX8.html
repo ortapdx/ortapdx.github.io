@@ -1,15 +1,6 @@
 ---
 layout: default
 ---
-<script src="assets/js/jquery.min.js"></script>
-<script type="text/javascript">var submitted=false;</script>
-<script type="text/javascript">
-$('#gform').on('submit', function(e) {
-  $('#gform *').fadeOut(2000);
-  $('#gform').prepend('Your submission has been processed...');
-  });
-</script>
-
 <!-- ******HEADER****** -->
 <header id="header" class="header">
   <div class="container">
@@ -67,9 +58,16 @@ $('#gform').on('submit', function(e) {
             <input type="submit" value="Submit">
           </form>
 
-<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
-        
+          <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
 
+          <script src="assets/js/jquery.min.js"></script>
+          <script type="text/javascript">var submitted=false;</script>
+          <script type="text/javascript">
+          $('#gform').on('submit', function(e) {
+            $('#gform *').fadeOut(2000);
+            $('#gform').prepend('Your submission has been processed...');
+            });
+          </script>
         </div><!--//btn-container-->
       </div><!--//cta-container-->
     <!-- </div>//donate-inner-->
