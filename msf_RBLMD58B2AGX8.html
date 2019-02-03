@@ -38,18 +38,11 @@ layout: default
 <!--    <div class="donate-inner"> -->
       <div style="margin-top:100px;text-align:left;">
         <h2 class="title text-left">ORTA Membership Application</h2>
-        <strong>Congratulations! We have obtained your verified name and address.</strong>
-        <br>
-        <p>Please fill in below membership application with your information. We respect your privacy and protect your information with utmost care.</p>
-         <!--PayPal generated code starts-->
-         <!--<form style="text-align:center;" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">-->
-            <!--<input type="hidden" name="cmd" value="_s-xclick" />-->
-            <!--<input type="hidden" name="hosted_button_id" value="RBLMD58B2AGX8" />-->
-            <!--<input type="image" src="https://raw.githubusercontent.com/ortapdx/ortapdx.github.io/master/images/btn_donateCC_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />-->
-            <!--<img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />-->
-          <!--</form>-->
-          <!--//PayPal generated code ends-->
-          <div id="msform" name="msform">
+        <div id="msform" name="msform">
+              <strong>Congratulations! We have obtained your verified name and address.</strong>
+              <br>
+              <p>Please fill in below membership application with your information. We respect your privacy and protect your information with utmost care.</p>
+
               <form name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLScFFse0N-h1zK9LbZbhhuW6TcrqyACdJNHnwPtOg5FsiGqLYg/formResponse?" target="hidden_iframe" onsubmit="submitted=true;">
                 First name:<br>
                 <input type="text" name="entry.1926626036" id="entry.1926626036entry.213242161"><br>
@@ -57,7 +50,7 @@ layout: default
                 <input type="text" name="entry.213242161" id="entry.213242161">
                 <input type="submit" value="Submit">
               </form>
-          </div>
+          </div> <!-- msform -->
 
           <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
 
@@ -72,6 +65,6 @@ layout: default
 <script type="text/javascript">
   $('#gform').on('submit', function(e) {
   $('#msform').fadeOut(500);
-  $('#donate').append('Your application for ORTA membership has been processed.. Thank you! <a href="index.html">Click here</a> to go home.');
+  $('#donate').append('Your application has been received. We will process and update you via e-mail shortly. Thank you for joining ORTA community! <a href="index.html">Click here</a> to go home.');
   });
 </script>
