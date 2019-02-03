@@ -33,7 +33,7 @@ layout: default
 </header><!--//header-->
 <p><br></p>
 <!-- ******MEMBERSHIP****** -->
-<section id="donate" class="donate section text-center">
+<section name="donate" id="donate" class="donate section text-center">
   <div class="container">
 <!--    <div class="donate-inner"> -->
       <div style="margin-top:100px;text-align:left;">
@@ -70,7 +70,7 @@ layout: default
 <script type="text/javascript">var submitted=false;</script>
 <script type="text/javascript">
   $('#gform').on('submit', function(e) {
-  $('#gform').fadeOut(2000);
-  $('#donate).prepend('Your submission has been processed...');
+  $('#gform *').fadeOut(2000);
+  $('#donate).append('Your submission has been processed...');
   });
 </script>
