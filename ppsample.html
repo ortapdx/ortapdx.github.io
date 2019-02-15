@@ -60,10 +60,10 @@ layout: default
             </caption>
               <tr>
                 <br>
-                <th align="left">Description</th>
-                <th>Each</th>
-                <th>Quantity</th>
-                <th>Total</th>
+                <th align="left">  Description  </th>
+                <th>  Each  </th>
+                <th>  Quantity  </th>
+                <th>  Total  </th>
 
               </tr>
 
@@ -72,12 +72,7 @@ layout: default
                 <td>Adults</td>
                 <td align="right">$15.00</td>
                 <td>
-                  <input type="text" name="qty10" size="2" />
-            &nbsp;
-                  <a href="javascript&colon;
-                  GetOrder ('id10',
-                            'Adults',
-                            15.00);"> update </a>
+                  <input type="text" name="qty10" size="2" onchange="GetOrder ('id10','Adults',15.00);"/>
                 </td>
 
                 <td>
@@ -90,12 +85,7 @@ layout: default
                 <td>Children</td>
                  <td align="right">$10.00</td>
                 <td>
-                  <input type="text" name="qty15" size="2" />
-            &nbsp;
-                  <a href="javascript&colon;
-                  GetOrder ('id15',
-                            'Children',
-                             10.00);"> update </a>
+                  <input type="text" name="qty15" size="2" onchange="GetOrder ('id15','Children',10.00);"/>
                 </td>
                 <td>
                   <input class="nbor" type="text" name="prc15" size="6" value="0.00" />
