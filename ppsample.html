@@ -56,7 +56,7 @@ layout: default
                 <th align="center">  Description  </th>
                 <th align="center">  Each  </th>
                 <th align="center">  Quantity  </th>
-                <th align="center">  Total  </th>
+                <th align="right">  Total  </th>
 
               </tr>
 
@@ -69,7 +69,7 @@ layout: default
                 </td>
 
                 <td align="right">
-                  <input style=" background-color: transparent; border: none; text-align: right;" class="nbor" type="text" name="prc15" size="6" value="0" readonly/>
+                  <input style="background-color: transparent; border: none; text-align: right;" class="nbor" type="text" name="prc15" size="6" value="0" readonly/>
                 </td>
               </tr>
 
@@ -81,7 +81,7 @@ layout: default
                   <input type="text" name="qty10" size="2" value="0" onchange="GetOrder ('id10','Children',10);"/>
                 </td>
                 <td align="right">
-                  <input style=" background-color: transparent; border: none; text-align: right;" class="nbor" type="text" name="prc10" size="6" value="0" readonly/>
+                  <input style="background-color: transparent; border: none; text-align: right;" class="nbor" type="text" name="prc10" size="6" value="0" readonly/>
                 </td>
               </tr>
 
@@ -92,7 +92,7 @@ layout: default
                     if (root.xx_cur.length > 0)
                       document.writeln (" (", root.xx_cur, ")");
                   </script>
-                  <input class="nbor" type="text" name="tot" size="6" value="0" readonly/>
+                  <input class="nbor" style="background-color: transparent; border: none; text-align: right;" type="text" name="tot" size="6" value="0" readonly/>
                 </td>
               </tr>
               <tr>
