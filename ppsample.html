@@ -59,22 +59,22 @@ layout: default
             </caption>
               <tr>
                 <br>
-                <th align="left">  Description  </th>
-                <th>  Each  </th>
-                <th>  Quantity  </th>
-                <th>  Total  </th>
+                <th align="center">  Description  </th>
+                <th align="center">  Each  </th>
+                <th align="center">  Quantity  </th>
+                <th align="center">  Total  </th>
 
               </tr>
 
               <tr>
 
-                <td>Adults</td>
-                <td align="right">$15.00</td>
-                <td>
+                <td align="center">Adults</td>
+                <td align="center">$15.00</td>
+                <td align="center">
                   <input type="text" name="qty15" size="2" onchange="GetOrder ('id15','Adults',15);"/>
                 </td>
 
-                <td>
+                <td align="right">
                   <input class="nbor" sytle=" background-color: transparent;
                                               border: 0px;
                                               outline: none;
@@ -89,19 +89,19 @@ layout: default
 
               <tr>
 
-                <td>Children</td>
-                 <td align="right">$10.00</td>
-                <td>
+                <td align="center">Children</td>
+                 <td align="center">$10.00</td>
+                <td align="center">
                   <input type="text" name="qty10" size="2" onchange="GetOrder ('id10','Children',10);"/>
                 </td>
-                <td>
+                <td align="right">
                   <input class="nbor" type="text" name="prc10" size="6" value="0" readonly/>
                 </td>
               </tr>
 
               <tr>
                 <td align="right" colspan="6">
-                  Total
+                  Total: 
                   <script type="text/javascript">
                     if (root.xx_cur.length > 0)
                       document.writeln (" (", root.xx_cur, ")");
