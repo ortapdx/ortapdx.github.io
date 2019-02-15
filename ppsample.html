@@ -49,19 +49,15 @@ layout: default
               method="post" action="javascript&colon;void 0;">
             <div class="input-group input-group-lg col-sm-12" style="max-width: 700px;">
             <table style="border:none; padding:20px;">
-            <caption>Enter Quantity of Tickets to Purchase Next to the Type
+            <caption>Enter Quantity of Tickets to Purchase Next to the Type <br>
             </caption>
-              <tr>
-                <br>
+              <tr style="border-bottom: 1px solid #ddd;">
                 <th align="center">  Description  </th>
                 <th align="center">  Each  </th>
                 <th align="center">  Quantity  </th>
                 <th align="right">  Total  </th>
-
               </tr>
-
               <tr style="border-bottom: 1px solid #ddd;">
-
                 <td align="left">Adults</td>
                 <td align="center">$15.00</td>
                 <td align="center">
@@ -85,13 +81,9 @@ layout: default
                 </td>
               </tr>
 
-              <tr>
-                <td align="right" colspan="6">
-                  Total: 
-                  <script type="text/javascript">
-                    if (root.xx_cur.length > 0)
-                      document.writeln (" (", root.xx_cur, ")");
-                  </script>
+              <tr style="text-align:right;>
+                <td colspan="6">
+                  Total (USD):  
                   <input class="nbor" style="background-color: transparent; border: none; text-align: right;" type="text" name="tot" size="6" value="0" readonly/>
                 </td>
               </tr>
