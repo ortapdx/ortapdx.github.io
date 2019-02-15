@@ -1,6 +1,140 @@
 ---
 layout: default
 ---
+<!-- ******HEADER****** -->
+<header id="header" class="header">
+  <div class="container">
+    <h2 class="logo">
+      <a href="/">
+        <span class="logo-title highlight">{{ site.org_abbr }}</span><br>
+        <span class="logo-title">{{ site.org_name }}</span>
+      </a>
+    </h2>
+    <nav id="main-nav" class="main-nav navbar-right" role="navigation">
+      <div class="navbar-header">
+        <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button><!--//nav-toggle-->
+      </div><!--//navbar-header-->
+      <div class="navbar-collapse collapse" id="navbar-collapse">
+        <ul class="nav navbar-nav">
+          <li class="active nav-item sr-only"><a href="index.html#promo">Home</a></li>
+          <li class="nav-item"><a href="index.html">Home</a></li>
+          <li class="nav-item"><a target="_blank" href="https://drive.google.com/open?id=1lUpaZBRbFZ0y68toCCcST2H7X3HeNCZr">Resources</a></li>
+          <li class="nav-item"><a href="index.html#contact">Contact</a></li>
+          <li class="nav-item last"><a class="highlight" href="intel.html#donate">Donate</a></li>
+        </ul><!--//nav-->
+      </div><!--//navabr-collapse-->
+    </nav><!--//main-nav-->
+  </div>
+</header><!--//header-->
+<p><br></p>
+<!-- ******MEMBERSHIP****** -->
+<section id="donate" class="donate section text-center">
+  <div class="container">
+<!--    <div class="donate-inner"> -->
+      <div style="margin-top:100px;text-align:left;">
+        <h2 class="title text-left">Buy Tickets for ORTA's Faboulous Event</h2>
+        <br>
+        Please review below information carefully before proceeding.
+         <ul>
+          <li>Ticket prices are as follows: $10 for Adult (Ages 12+), and $5 for Children (Ages 5-11). Kids 4-years old and younger can attend for free. </li>
+          <li>You can pay with a credit card (VISA, MC, AmEx, DISCOVER), or a PayPal account.</li>
+         </ul>
+         <br>
+            <!-- Payment Form Starts Here -->
+            <form name="orderf" id="orderf" 
+              method="post" action="javascript&colon;void 0;">
+            <table cellspacing = "0"
+                   cellpadding = "4"
+                   border  = "0"
+                   frame   = "box"
+                   rules   = "all"
+                   summary = "Ticket Purchase">
+            <caption>Select Type and Quantity of Tickets
+            </caption>
+              <tr>
+
+                <th align="left">Description</th>
+                <th>each</th>
+                <th>Quantity</th>
+                <th>Tot</th>
+
+              </tr>
+
+              <tr>
+
+                <td>Adults</td>
+                <td align="right">$15.00</td>
+                <td>
+                  <input type="text" name="qty10" size="2" />
+            &nbsp;
+                  <a href="javascript&colon;
+                  GetOrder ('id10',
+                            'Adults',
+                            15.00);">add</a>
+                </td>
+
+                <td>
+                  <input class="nbor" type="text" name="prc10" size="6" value="0.00" />
+                </td>
+              </tr>
+
+              <tr>
+
+                <td>Children</td>
+                 <td align="right">$10.00</td>
+                <td>
+                  <input type="text" name="qty15" size="2" />
+            &nbsp;
+                  <a href="javascript&colon;
+                  GetOrder ('id15',
+                            'Children',
+                             10.00);">add</a>
+                </td>
+                <td>
+                  <input class="nbor" type="text" name="prc15" size="6" value="0.00" />
+                </td>
+              </tr>
+
+              <tr>
+                <td align="right" colspan="6">
+            Total
+            <script type="text/javascript">
+              if (root.xx_cur.length > 0)
+                document.writeln (" (", root.xx_cur, ")");
+            </script>
+                  <input class="nbor" type="text" name="tot" size="6" value="0.00" />
+                </td>
+              </tr>
+            </table>
+
+                  <input type    = "button" 
+                         value   = "Reset"
+                         onclick = "cntr = 0;  // zap cart
+                                    shpr = function (wt) {return 0;}
+                                    if (root.shp) spos = 0;
+                                    if (root.tax) tpos = 0;
+                                    this.form.reset();" />
+                  &nbsp; &nbsp;
+                  <input type    = "button"
+                         value   = "Checkout"
+                         onclick = "SendCart ();" />
+                  &nbsp; &nbsp;
+            </form>
+            <!-- Payment Form Ends Here -->
+        <p><br></p>
+        <p><br>(*) Don't have a credit card? Reach out to us at <a href="mailto: apply@ortapdx.org">apply@ortapdx.org</a> to learn more on alternate ways to apply.
+        </p>
+        </div><!--//btn-container-->
+      </div><!--//cta-container-->
+    <!-- </div>//donate-inner-->
+  </div><!--//container-->
+</section><!--//how-->
+
 <!-- Start of Script -->
 <div style="display: none; visibility: hidden;"
 <script type = "text/javascript" >
@@ -154,137 +288,3 @@ function SetTax (obj) {
 </script>
 </div>
 <!-- End of Script -->     
-
-<!-- ******HEADER****** -->
-<header id="header" class="header">
-  <div class="container">
-    <h2 class="logo">
-      <a href="/">
-        <span class="logo-title highlight">{{ site.org_abbr }}</span><br>
-        <span class="logo-title">{{ site.org_name }}</span>
-      </a>
-    </h2>
-    <nav id="main-nav" class="main-nav navbar-right" role="navigation">
-      <div class="navbar-header">
-        <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-collapse">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button><!--//nav-toggle-->
-      </div><!--//navbar-header-->
-      <div class="navbar-collapse collapse" id="navbar-collapse">
-        <ul class="nav navbar-nav">
-          <li class="active nav-item sr-only"><a href="index.html#promo">Home</a></li>
-          <li class="nav-item"><a href="index.html">Home</a></li>
-          <li class="nav-item"><a target="_blank" href="https://drive.google.com/open?id=1lUpaZBRbFZ0y68toCCcST2H7X3HeNCZr">Resources</a></li>
-          <li class="nav-item"><a href="index.html#contact">Contact</a></li>
-          <li class="nav-item last"><a class="highlight" href="intel.html#donate">Donate</a></li>
-        </ul><!--//nav-->
-      </div><!--//navabr-collapse-->
-    </nav><!--//main-nav-->
-  </div>
-</header><!--//header-->
-<p><br></p>
-<!-- ******MEMBERSHIP****** -->
-<section id="donate" class="donate section text-center">
-  <div class="container">
-<!--    <div class="donate-inner"> -->
-      <div style="margin-top:100px;text-align:left;">
-        <h2 class="title text-left">Buy Tickets for ORTA's Faboulous Event</h2>
-        <br>
-        Please review below information carefully before proceeding.
-         <ul>
-          <li>Ticket prices are as follows: $10 for Adult (Ages 12+), and $5 for Children (Ages 5-11). Kids 4-years old and younger can attend for free. </li>
-          <li>You can pay with a credit card (VISA, MC, AmEx, DISCOVER), or a PayPal account.</li>
-         </ul>
-         <br>
-            <!-- Payment Form Starts Here -->
-            <form name="orderf" id="orderf" 
-              method="post" action="javascript&colon;void 0;">
-            <table cellspacing = "0"
-                   cellpadding = "4"
-                   border  = "0"
-                   frame   = "box"
-                   rules   = "all"
-                   summary = "Ticket Purchase">
-            <caption>Select Type and Quantity of Tickets
-            </caption>
-              <tr>
-
-                <th align="left">Description</th>
-                <th>each</th>
-                <th>Quantity</th>
-                <th>Tot</th>
-
-              </tr>
-
-              <tr>
-
-                <td>Adults</td>
-                <td align="right">$15.00</td>
-                <td>
-                  <input type="text" name="qty10" size="2" />
-            &nbsp;
-                  <a href="javascript&colon;
-                  GetOrder ('id10',
-                            'Adults',
-                            15.00);">add</a>
-                </td>
-
-                <td>
-                  <input class="nbor" type="text" name="prc10" size="6" value="0.00" />
-                </td>
-              </tr>
-
-              <tr>
-
-                <td>Children</td>
-                 <td align="right">$10.00</td>
-                <td>
-                  <input type="text" name="qty15" size="2" />
-            &nbsp;
-                  <a href="javascript&colon;
-                  GetOrder ('id15',
-                            'Children',
-                             10.00);">add</a>
-                </td>
-                <td>
-                  <input class="nbor" type="text" name="prc15" size="6" value="0.00" />
-                </td>
-              </tr>
-
-              <tr>
-                <td align="right" colspan="6">
-            Total
-            <script type="text/javascript">
-              if (root.xx_cur.length > 0)
-                document.writeln (" (", root.xx_cur, ")");
-            </script>
-                  <input class="nbor" type="text" name="tot" size="6" value="0.00" />
-                </td>
-              </tr>
-            </table>
-
-                  <input type    = "button" 
-                         value   = "Reset"
-                         onclick = "cntr = 0;  // zap cart
-                                    shpr = function (wt) {return 0;}
-                                    if (root.shp) spos = 0;
-                                    if (root.tax) tpos = 0;
-                                    this.form.reset();" />
-                  &nbsp; &nbsp;
-                  <input type    = "button"
-                         value   = "Checkout"
-                         onclick = "SendCart ();" />
-                  &nbsp; &nbsp;
-            </form>
-            <!-- Payment Form Ends Here -->
-        <p><br></p>
-        <p><br>(*) Don't have a credit card? Reach out to us at <a href="mailto: apply@ortapdx.org">apply@ortapdx.org</a> to learn more on alternate ways to apply.
-        </p>
-        </div><!--//btn-container-->
-      </div><!--//cta-container-->
-    <!-- </div>//donate-inner-->
-  </div><!--//container-->
-</section><!--//how-->
