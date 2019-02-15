@@ -104,16 +104,17 @@ layout: default
 
               <tr>
                 <td align="right" colspan="6">
-            Total
-            <script type="text/javascript">
-              if (root.xx_cur.length > 0)
-                document.writeln (" (", root.xx_cur, ")");
-            </script>
+                  Total
+                  <script type="text/javascript">
+                    if (root.xx_cur.length > 0)
+                      document.writeln (" (", root.xx_cur, ")");
+                  </script>
                   <input class="nbor" type="text" name="tot" size="6" value="0.00" />
                 </td>
               </tr>
-            </table>
-                  <br>
+              <tr>
+                <td align="center" colspan="6">
+                                <br>
                   <input type    = "button" 
                          value   = "Reset"
                          class   = "button btn btn-cta-secondary"
@@ -126,9 +127,13 @@ layout: default
                   <input type    = "button"
                          value   = "Checkout"
                          class   = "button btn btn-cta-secondary"
-                         style   = "color:green;"
+                         style   = "background-color:green;"
                          onclick = "SendCart ();" />
                   &nbsp; &nbsp;
+                  </td>
+              </tr>
+            </table>
+
              </div>
             </form>
             </div>
