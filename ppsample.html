@@ -109,8 +109,8 @@ layout: default
                   <input class="nbor" type="text" name="tot" size="6" value="0" readonly/>
                 </td>
               </tr>
-              <tr style="border: none;">
-                <td align="center" colspan="6">
+              <tr>
+                <td style="border: none;" align="center" colspan="6">
                                 <br>
                   <input type    = "button" 
                          value   = "Reset"
@@ -120,6 +120,13 @@ layout: default
                                     if (root.shp) spos = 0;
                                     if (root.tax) tpos = 0;
                                     this.form.reset();" />
+                  &nbsp; &nbsp;
+                  <input type    = "button"
+                         value   = "Update"
+                         class   = "button btn btn-cta-secondary"
+                         onclick = "GetOrder('id10','Children',10);GetOrder ('id15','Adults',15);" />
+                  &nbsp; &nbsp;
+                  
                   &nbsp; &nbsp;
                   <input type    = "button"
                          value   = "Checkout"
