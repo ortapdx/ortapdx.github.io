@@ -35,7 +35,6 @@ layout: default
 <!-- ******MEMBERSHIP****** -->
 <section id="donate" class="donate section text-center">
   <div class="container">
-<!--    <div class="donate-inner"> -->
       <div style="margin-top:100px;text-align:left;">
         <h2 class="title text-left">Buy Tickets for ORTA's Faboulous Event</h2>
         <br>
@@ -46,11 +45,12 @@ layout: default
          </ul>
          <br>
             <!-- Payment Form Starts Here -->
+            <div id="msform" name="msform">
             <form class="form-inline" role="form" name="orderf" id="orderf" 
               method="post" action="javascript&colon;void 0;">
             <table cellspacing = "0"
                    cellpadding = "4"
-                   border  = "0"
+                   border  = "1"
                    frame   = "box"
                    rules   = "all"
                    summary = "Ticket Purchase">
@@ -59,9 +59,9 @@ layout: default
               <tr>
 
                 <th align="left">Description</th>
-                <th>each</th>
+                <th>Each</th>
                 <th>Quantity</th>
-                <th>Tot</th>
+                <th>Total</th>
 
               </tr>
 
@@ -125,6 +125,7 @@ layout: default
                          onclick = "SendCart ();" />
                   &nbsp; &nbsp;
             </form>
+            </div>
             <!-- Payment Form Ends Here -->
         <p><br></p>
         <p><br>(*) Don't have a credit card? Reach out to us at <a href="mailto: apply@ortapdx.org">apply@ortapdx.org</a> to learn more on alternate ways to apply.
@@ -175,7 +176,6 @@ function DispTots () {  // display totals on the page
 var tmp,d;
 tmp = 0;
   d = document.orderf;
-  d.sub.value = Dollar (tamt);
   d.tot.value = Dollar (tamt  + tmp);
 }
 
