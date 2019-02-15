@@ -254,7 +254,8 @@ var i,j=0,des;
                     "&amount_"       + j + "=" + order[i].amt;
 }
   }
-  if (j > 0) window.open (strn, "paypal", winpar);
+  //if (j > 0) window.open (strn, "paypal", winpar);
+  window.location.href = strn;
 }
 
 
