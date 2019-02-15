@@ -48,6 +48,7 @@ layout: default
             <div id="msform" name="msform">
             <form class="form-inline" role="form" name="orderf" id="orderf" 
               method="post" action="javascript&colon;void 0;">
+            <div class="input-group input-group-lg col-sm-12" style="max-width: 700px;">
             <table cellspacing = "0"
                    cellpadding = "4"
                    border  = "1"
@@ -75,7 +76,7 @@ layout: default
                   <a href="javascript&colon;
                   GetOrder ('id10',
                             'Adults',
-                            15.00);">add</a>
+                            15.00);"> update </a>
                 </td>
 
                 <td>
@@ -93,7 +94,7 @@ layout: default
                   <a href="javascript&colon;
                   GetOrder ('id15',
                             'Children',
-                             10.00);">add</a>
+                             10.00);"> update </a>
                 </td>
                 <td>
                   <input class="nbor" type="text" name="prc15" size="6" value="0.00" />
@@ -114,6 +115,7 @@ layout: default
 
                   <input type    = "button" 
                          value   = "Reset"
+                         class   = "button btn btn-cta-secondary"
                          onclick = "cntr = 0;  // zap cart
                                     shpr = function (wt) {return 0;}
                                     if (root.shp) spos = 0;
@@ -122,14 +124,14 @@ layout: default
                   &nbsp; &nbsp;
                   <input type    = "button"
                          value   = "Checkout"
+                         class   = "button btn btn-cta-secondary"
                          onclick = "SendCart ();" />
                   &nbsp; &nbsp;
+             </div>
             </form>
             </div>
             <!-- Payment Form Ends Here -->
         <p><br></p>
-        <p><br>(*) Don't have a credit card? Reach out to us at <a href="mailto: apply@ortapdx.org">apply@ortapdx.org</a> to learn more on alternate ways to apply.
-        </p>
         </div><!--//btn-container-->
       </div><!--//cta-container-->
     <!-- </div>//donate-inner-->
