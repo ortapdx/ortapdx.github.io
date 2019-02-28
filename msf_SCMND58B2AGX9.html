@@ -104,9 +104,16 @@ layout: default
 <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 <script type="text/javascript">var submitted=false;</script>
 <script type="text/javascript">
+  $(document).ready(function () {
+    resetForms();
+  });
+
+  function resetForms() {
+    document.forms['gform'].reset();
+  }
   $('#gform').on('submit', function(e) {
   $('#msform').fadeOut(100);
-  $('#donate').append('Your application has been received! We will process and update you via e-mail shortly. Thank you for joining ORTA community! The application form will reset itself in 5 seconds...</p>');
-  setTimeout(function(){ $('#gform').reset(); location.reload(); }, 5000);
+  $('#donate').append('<img border="0" style="max-width: 300px; height:auto;" src="images/ORTA_logo_tpt_st.png"> <br> Your application has been received! We will process and update you via e-mail shortly. Thank you for joining ORTA community! The application form will reset itself in 5 seconds...</p>');
+  setTimeout(function(){ location.reload(); }, 5000);
   });
 </script>
