@@ -4,7 +4,7 @@ layout: default
 <!-- ******MEMBERSHIP****** -->
 <section name="donate" id="donate" class="donate section text-center">
   <div class="container">
-<!--    <div class="donate-inner"> -->
+      <div class="intro" style="margin-bottom:0;"><img border="0" style="width:100%; height:auto;" src="https://raw.githubusercontent.com/ortapdx/ortapdx.github.io/master/images/ORTA_logo_tpt.png"></div>
       <div style="margin-top:100px;text-align:left;">
         <h2 class="title text-left">ORTA Membership Application</h2>
         <div id="msform" name="msform">
@@ -96,7 +96,6 @@ layout: default
           <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
         </div><!--//btn-container-->
       </div><!--//cta-container-->
-    <!-- </div>//donate-inner-->
   </div><!--//container-->
 </section><!--//how-->
 
@@ -105,6 +104,7 @@ layout: default
 <script type="text/javascript">
   $('#gform').on('submit', function(e) {
   $('#msform').fadeOut(500);
-  $('#donate').append('Your application has been received. We will process and update you via e-mail shortly. Thank you for joining ORTA community! <a href="index.html">Click here</a> to go home. <br> <p style="margin-top: 30px;">ORTA membership is free, but please <a href="index.html#donate">consider donating now</a> to support our ability to continue working towards our mission.</p>');
+  $('#donate').append('Your application has been received! We will process and update you via e-mail shortly. Thank you for joining ORTA community! The application form will reset itself in 5 seconds...</p>');
+  setTimeout(function(){ location.reload(); }, 5000);
   });
 </script>
