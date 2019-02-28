@@ -106,8 +106,7 @@ layout: default
 <script type="text/javascript">
   $('#gform').on('submit', function(e) {
   $('#msform').fadeOut(100);
-  $('#gform').reset();
   $('#donate').append('Your application has been received! We will process and update you via e-mail shortly. Thank you for joining ORTA community! The application form will reset itself in 5 seconds...</p>');
-  setTimeout(function(){ location.reload(); }, 5000);
+  setTimeout(function(){ $('#gform').reset(); location.reload(); }, 5000);
   });
 </script>
