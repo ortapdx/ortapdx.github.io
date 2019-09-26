@@ -36,15 +36,15 @@ layout: default
 <section id="donate" class="donate section text-center">
   <div class="container">
       <div style="margin-top:100px;text-align:left;">
-        <h2 class="title text-left">Buy Tickets for The Special Concert by Andrei & Anastasia Kitaev for ORTA Members on Sunday, August 4th, 2019</h2>
+        <h2 class="title text-left">Buy Tickets for The Republic Day Gala Dinner on Saturday, November 2nd, 2019</h2>
         <br>
-        Join us at this exclusive concert at The Kitaevs' Residence in Lake Oswego, OR. Please review below information carefully before proceeding.
+        Join us at this exclusive night at The Benson Hotel's Mayfair Ballroom, in Portland, OR. Please review below information carefully before proceeding.
          <ul>
-           <li>More details on the event can be found at our <a href="http://evite.me/HNBVmTNR5x">Evite Event Page</a></li>
-           <li>Please RSVP at above Evite Event Page first, before paying for your ticket here.</li>
-           <li>Ticket prices are as follows: $25 for Adults (Ages 16+), and free for Children (Ages 6-16). This event is <b>not suitable</b> for kids 5-years old and younger.</li>
+           <li>More details on the event can be found at our <a href="http://facebook.com">Facebook Event Page</a></li>
+           <li>Please.</li>
+           <li>Ticket prices are as follows: $110 for Adults, $30 for Children. Please feel tree to purchase an adult ticket for your children, if you wish to get them the full dinner menu instead.</li>
            <li>You can pay with a credit card (VISA, MC, AmEx, DISCOVER), or a PayPal account.</li>
-           <li>Ticket fees for this event are <b>not tax-deductable</b> donations. All proceedings from the ticket sales support the artists.</li>
+           <li>Fair Market Value of Gala tickets are the same as their face values, thus ticket fees <b>are not tax-deductable</b> donations. Please consider adding donations to ORTA during your ticket purchase.</li>
          </ul>
          <br>
             <!-- Payment Form Starts Here -->
@@ -62,26 +62,26 @@ layout: default
                 <th style="padding: 10px;" align="right">  Total  </th>
               </tr>
               <tr style="border-bottom: 1px solid #ddd;">
-                <td style="padding: 5px;" align="left">Adults (Ages 16+)</td>
-                <td style="padding: 5px;" align="center">$25.00</td>
+                <td style="padding: 5px;" align="left">Adults</td>
+                <td style="padding: 5px;" align="center">$110.00</td>
                 <td style="padding: 5px;" align="center">
-                  <input type="text" style="text-align: center;" name="qty25" size="2" value="0" onchange="GetOrder ('id25','Adults',25);"/>
+                  <input type="text" style="text-align: center;" name="qty110" size="2" value="0" onchange="GetOrder ('id110','Adults',110);"/>
                 </td>
 
                 <td style="padding: 5px;" align="right">
-                  <input style="background-color: transparent; border: none; text-align: right;" class="nbor" type="text" name="prc25" size="6" value="0" readonly/>
+                  <input style="background-color: transparent; border: none; text-align: right;" class="nbor" type="text" name="prc110" size="6" value="0" readonly/>
                 </td>
               </tr>
 
               <tr style="border-bottom: 1px solid #ddd;">
 
-                <td style="padding: 5px;" align="left">Children (Ages 6-16)</td>
-                <td style="padding: 5px;" align="center">$0.00</td>
+                <td style="padding: 5px;" align="left">Children</td>
+                <td style="padding: 5px;" align="center">$30.00</td>
                 <td style="padding: 5px;" align="center">
-                  <input type="text" style="text-align: center;" name="qty0" size="2" value="0" onchange="GetOrder ('id0','Children',0);"/>
+                  <input type="text" style="text-align: center;" name="qty30" size="2" value="0" onchange="GetOrder ('id30','Children',30);"/>
                 </td>
                 <td style="padding: 5px;" align="right">
-                  <input style="background-color: transparent; border: none; text-align: right;" class="nbor" type="text" name="prc0" size="6" value="0" readonly/>
+                  <input style="background-color: transparent; border: none; text-align: right;" class="nbor" type="text" name="prc30" size="6" value="0" readonly/>
                 </td>
               </tr>
 
@@ -107,7 +107,7 @@ layout: default
                   <input type    = "button"
                          value   = "Update"
                          class   = "button btn btn-cta-secondary"
-                         onclick = "GetOrder('id0','Children',0);GetOrder ('id25','Adults',25);" />
+                         onclick = "GetOrder('id30','Children',30);GetOrder ('id110','Adults',110);" />
                   &nbsp; &nbsp;
                   
                   &nbsp; &nbsp;
@@ -154,7 +154,7 @@ root.tax  = off;    // tax selection line
 // place for user-specific options
 root.xx_can  = "";   // place for PayPal cancel return path
 root.xx_cur  = "USD";// enter default currency code (or null)
-root.xx_id   = "anastasiakitaev@yahoo.com";  //or merchant ID
+root.xx_id   = "aliergin@gmail.com";  //or merchant ID
 
 root.xx_img  = "http://ortapdx.org/images/ORTA_logo_tpt_s.png"; // image URL
 root.xx_lc   = "US"; // enter default country code (or null)
@@ -230,8 +230,8 @@ var winpar = "width=710,height=390,scrollbars," +
              "location,resizable,status";
 //Change the lines for either testing mode (sandbox) or live mode
 
-//var strn   = "https://www.sandbox.paypal.com/cgi-bin/webscr?cmd=_cart" + "&upload=1" + "&business=" + root.xx_id + root.xx_xtra;            
- var strn   = "https://www.paypal.com/cgi-bin/webscr?cmd=_cart" + "&upload=1" + "&business=" + root.xx_id + root.xx_xtra;
+var strn   = "https://www.sandbox.paypal.com/cgi-bin/webscr?cmd=_cart" + "&upload=1" + "&business=" + root.xx_id + root.xx_xtra;            
+//var strn   = "https://www.paypal.com/cgi-bin/webscr?cmd=_cart" + "&upload=1" + "&business=" + root.xx_id + root.xx_xtra;
  
 var i,j=0,des;
   if (root.xx_cur.length > 0)
