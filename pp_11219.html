@@ -220,9 +220,9 @@ var op = new Array ();    // accumulate options here
     else op[i] = "";
   }
   document.orderf["prc" + nr].value = Dollar (qty * amt);
-  document.orderf["prc110"].value = Dollar (Dollar (document.orderf["prc111"].value) 
-                                             + Dollar (document.orderf["prc112"].value) 
-                                             + Dollar (document.orderf["prc113"].value));
+  document.orderf["prc110"].value = Dollar (Number(document.orderf["prc111"].value) 
+                                             + Number(document.orderf["prc112"].value) 
+                                             + Number(document.orderf["prc113"].value));
   if (cntr == 0) order = new Object (); // zap object
   cntr = cntr + 1;               // bump counter so no zap next time
   order[id] = new Object ();     // create new entry
