@@ -185,7 +185,7 @@ root.tax  = off;    // tax selection line
 // place for user-specific options
 root.xx_can  = "";   // place for PayPal cancel return path
 root.xx_cur  = "USD";// enter default currency code (or null)
-root.xx_id   = "aliergin@gmail.com";  //or merchant ID
+root.xx_id   = "paypal@ortapdx.org";  //or merchant ID
 
 root.xx_img  = "http://ortapdx.org/images/ORTA_logo_tpt_s.png"; // image URL
 root.xx_lc   = "US"; // enter default country code (or null)
@@ -264,8 +264,8 @@ var winpar = "width=710,height=390,scrollbars," +
              "location,resizable,status";
 //Change the lines for either testing mode (sandbox) or live mode
 
-var strn   = "https://www.sandbox.paypal.com/cgi-bin/webscr?cmd=_cart" + "&upload=1" + "&business=" + root.xx_id + root.xx_xtra;            
-//var strn   = "https://www.paypal.com/cgi-bin/webscr?cmd=_cart" + "&upload=1" + "&business=" + root.xx_id + root.xx_xtra;
+//var strn   = "https://www.sandbox.paypal.com/cgi-bin/webscr?cmd=_cart" + "&upload=1" + "&business=" + root.xx_id + root.xx_xtra;            
+var strn   = "https://www.paypal.com/cgi-bin/webscr?cmd=_cart" + "&upload=1" + "&business=" + root.xx_id + root.xx_xtra;
  
 var i,j=0,des;
   if (root.xx_cur.length > 0)
