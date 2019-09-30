@@ -142,7 +142,7 @@ layout: default
       <div class="col-sm-5 text-left text-left-sm">
         <p>Sign up to receive updates, and ways to get involved. We hope to see you in our community!</p>
         {% if site.tinyletter_username %}
-        <p><em>No spam. Just the occasional update.</em></p>
+        <p><em>No spam. Just the occasional update. <br> Please also consider <a href="apply.html">becoming a member!</a></em></p>
         <div class="row">
           <div class="col-sm-12">
             <form class="form-inline" role="form" action="https://tinyletter.com/{{ site.tinyletter_username }}" method="post" target="popupwindow" onsubmit="window.open('https://tinyletter.com/{{ site.tinyletter_username }}', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true">
@@ -150,7 +150,7 @@ layout: default
                 <label class="sr-only" for="tlemail">Email address</label>
                 <input type="email" class="form-control" name="email" id="tlemail" placeholder="email address" />
                 <div class="input-group-btn">
-                  <button type="submit" class="button btn btn-cta-secondary">Join Us!</button>
+                  <button type="submit" class="button btn btn-cta-secondary">Sign Up!</button>
                 </div><!-- /btn-group -->
               </div><!-- /input-group -->
             </form>
@@ -210,42 +210,42 @@ layout: default
     <div class="donate-inner">
       <h2 class="title text-center">Donate</h2>
       <div class="info">
-        <p><strong>Become a donor today.</strong><br>As a small grassroots organization, know that every dollar will have an immense impact on our ability to continue working towards our mission.</p>
-        {% if site.donorbox_campaign_name %}
-          <div class="donorbox text-center">
-            <iframe src="https://donorbox.org/embed/{{ site.donorbox_campaign_name }}" height="600px" width="100%" style="max-width:500px; min-width:310px" seamless="seamless" name="donorbox" frameborder="0" scrolling="no"></iframe>
-          </div>
-          {% if site.501c3 == true %}
-            <p>Contributions are tax deductible to the extent permitted by law.<br>{{ site.org_name }} is a 501(c)(3) organization.</p>
-          {% elsif site.fiscal_sponsor_name %}
-            <p>{{ site.org_name }} is fiscally sponsored by {{ site.fiscal_sponsor_name }}, a 501 (c)(3) tax exempt non-profit organization.</p>
-          {% endif %}
-        {% else %}
-        <div class="donorbox text-center">
-        </div>
+        <p><strong>Become a donor today.</strong><br>ORTA is a volunteer-run public charitable non-profit, and donations made to ORTA are tax-deductible to the extent permitted by IRS Internal Revenue Code 501(c)3. ORTA’s tax identification number (EIN) is 83-3393692. As a small grassroots organization, know that every dollar will have an immense impact on our ability to continue working towards our mission.</p>
         <hr>
-        <p class="text-warning">Sorry, online donations are not available at this time <i class="fa fa-frown-o"></i></p>
+        <p class="text-warning">Please choose from one of below ways to donate.</i></p>
         <hr>
-        {% endif %}
       </div><!--//info-->
       <div class="cta-container">
         <div class="speech-bubble">
-          <p class="intro">Your support means the world to us :)</p>
-          <div class="icon-holder  text-center"><i class="fa fa-smile-o"></i></div>
-        </div><!--//speech-bubble-->
-        <div class="btn-container  text-center">
-          <!--//You need to generate your own PayPal button if you choose to use Paypal - https://www.paypal.com/us/cgi-bin/?cmd=_donate-intro-outside -->
-          <!--PayPal generated code starts-->
-              <!--form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-              <input type="hidden" name="cmd" value="_s-xclick">
-              <input type="hidden" name="hosted_button_id" value="{{ site.paypal_button_id }}">
-              <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-              <img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1">
-            </form-->
-            <!--//PayPal generated code ends-->
-
-        </div><!--//btn-container-->
+          <h2 class="text-center">BEST</h2>
+          <div class="icon-holder  text-center"><i class="fa fa-smile-o"></i><i class="fa fa-smile-o"></i><i class="fa fa-smile-o"></i></div>
+          <p class="intro">Do you work for a company with a non-profit matching program? Thousands of companies, including <a href="https://intel.benevity.org">Intel Corp.</a> and <a href="https://nike.benevity.org">Nike Inc.</a>, match employee donations. Click below to check.</p>
+          <div class="input-group-btn">
+              <button onclick="window.open('https://tinyurl.com/y454hc52', 'popupwindow', 'scrollbars=yes,width=600,height=400');return true" class="button btn btn-cta-secondary">Let Me Check!</button>
+           </div><!-- /btn-group -->
+        </div><!--//speech-bubble 1-->
+         <div class="speech-bubble">
+          <h2 class="text-center">BETTER</h2>
+          <div class="icon-holder  text-center"></i><i class="fa fa-smile-o"></i><i class="fa fa-smile-o"></i></div>
+          <p class="intro">Do you have a PayPal account? Or, are you willing to sign-up for one? Donate to ORTA via PayPal Giving Fund!</p>
+          <div class="input-group-btn">
+             <button onclick="window.open('http://paypal.com/us/fundraiser/charity/3662311', 'popupwindow', 'scrollbars=yes,width=800,height=1024');return true"  class="button btn btn-cta-secondary">Donate via PayPal!</button>
+          </div><!-- /btn-group -->       
+        </div><!--//speech-bubble 2-->
+         <div class="speech-bubble">
+          <h2 class="text-center">GOOD</h2>
+          <div class="icon-holder  text-center"><i class="fa fa-smile-o"></i></div>           
+          <p class="intro">Donate to ORTA using your Debit or Credit Card!<br/><img src="images/btn_donateCC_LG.gif"/></p>
+          <div class="input-group-btn">
+              <button onclick="window.open('https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=GRG4X3LPQDCSW&source=url', 'popupwindow', 'scrollbars=yes,width=800,height=1024');return true" class="button btn btn-cta-secondary">Donate using your card!</button>
+          </div><!-- /btn-group -->
+        </div><!--//speech-bubble 3-->
       </div><!--//cta-container-->
+      <div class="info">
+        <hr>
+        <p class="text-warning">Can't use any of above to donate? Reach out to us at <a href="mailto: {{ site.org_general_email_inbox }}">{{ site.org_general_email_inbox }}</a> for sending a donation check or other forms of contributions.</p>
+        <hr>
+      </div><!--//info-->
     </div><!--//donate-inner-->
   </div><!--//container-->
 </section><!--//how-->
